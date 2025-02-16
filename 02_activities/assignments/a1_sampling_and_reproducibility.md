@@ -10,10 +10,29 @@ Modify the number of repetitions in the simulation to 100 (from the original 100
 
 Alter the code so that it is reproducible. Describe the changes you made to the code and how they affected the reproducibility of the script file. The output does not need to match Whitby’s original blogpost/graphs, it just needs to produce the same output when run multiple times
 
-# Author: YOUR NAME
+# Author: Rachel Fernandes
 
 ```
-Please write your explanation here...
+sampling procedure: infection sampling (random sampling), primary contact tracing (random sampling), secondary contact tracing (random sampling) 
+
+functions used: for infection sampling, it is np.random.choice()
+                for primary contact tracing sampling, it is np.random.rand()
+                for secondary contact tracing sampling, it is value_counts()
+
+sample size: sample size for each simulation is a 1000 people
+
+sampling frame: Consists of 1000 people divided into 2 groups. 200 at weddings and 800 at brunches
+
+underlying distributions involved: Binomial distributions because people can either be infected or not infected.
+
+how these relate to the procedure outlined in the blog post: The procedure appears to be the same in that they both use a biased sampling procedure. As the blog post mentions, it is easier to trace by sampling from certain events (e.g., weddings and brunches), rather than collecting information from the entire population at random. 
+
+The two graphs are different in that the observed proportion of infections appears to be higher in the blog post. 
+
+The results are fairly reproducible given that the majority of cases seem to be clustered around the 0.20 mark when running the code several times. However, the reproducibility can be improved (see below)
+
+Inserted np.random.seed(42) before the simulation loop to ensure the random number generator produces the same sequence of random values every time. As a result each execution of the script now generates identical output.
+
 
 ```
 
