@@ -60,6 +60,15 @@ Observational units: Individual survey responses.
 
 Your 5-10 question survey:
 ```
+0. Please select which best describes you.
+-Entry level employee
+-Mid level employee (edit to "lower level" if the company formally calls this level that)
+-Senior level employee
+-Manager level employee
+-Director level employee
+-Executive level employee
+
+
 1. On a scale of 1-10, how satisfied are you with your current role at the company?
 
 2. What are the primary reasons you might consider leaving your position? (Select all that apply)
@@ -87,8 +96,8 @@ Identify and describe survey features:
 
 ```
 Sample type: Stratified random sampling.
-
-Sample size: 20,000 respondents.
+ 
+Sample Size: Approximately 50,000 units. Expected Completed Questionnaires: 24,000
 
 Target population: The target population for the survey included all persons 15 years of age and older in Canada, excluding:
 1. Residents of the Yukon, Northwest Territories, and Nunavut;
